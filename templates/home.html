@@ -1,0 +1,6 @@
+{% if loggedIn %}
+    <h1>HELLO {{name}}</h1>
+    <form action="/logout" method="GET">
+        <input type="submit" value="Logout">
+    </form>
+{% endif %}

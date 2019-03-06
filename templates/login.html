@@ -1,0 +1,10 @@
+{% block body %}
+  <h1>Login</h1> <br>
+  <form action="/do_login" method="POST">
+    <label>Username</label>
+    <input type="username" name="username" placeholder="Username"><br>
+    <label>Password</label>
+    <input type="password" name="password" placeholder="Password"><br>
+    <input type="submit" value="Log in">
+  </form>
+{% endblock %}
