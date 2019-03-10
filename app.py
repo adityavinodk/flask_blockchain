@@ -1,16 +1,11 @@
 from flask import Flask, flash, redirect, render_template, request, session, abort
 from pymongo import MongoClient as mon
-from flask_pymongo import PyMongo
 from werkzeug import generate_password_hash, check_password_hash
 import os
 
 app = Flask(__name__)
 app.secret_key = os.urandom(12)
-# db = mon()['blockchain']
-app.config["MONGO_URI"] = "mongodb://localhost:27017/blockchain"
-mongo = PyMongo(app)
-db = mongo.db
-
+db = mon()['blockchain']
 
 @app.route('/do_login', methods=['POST'])
 def do_login():
@@ -55,4 +50,4 @@ def logout():
     return home()
 
 if __name__ == "__main__":
-    app.run(debug=True,host='0.0.0.0', port=5000)
+    app.run(host='0.0.0.0', port=80)
