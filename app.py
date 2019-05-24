@@ -49,5 +49,12 @@ def logout():
     session['loggedIn'] = False
     return home()
 
+# @app.route('/copy')
+# def copy():
+
+
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=80)
+    app.run(host='0.0.0.0', port=5000)
+
+# flask run --host=10.20.202.61 --port=8080
+# ni.ifaddresses('en0')[2][0]['addr'] for mac

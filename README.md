@@ -1,1 +1,2 @@
 # Supply Chain Blockchain implementation using Flask and Mongo
+This is a research project which is aimed at implementing the concepts of Blockchain to form a decentralized, secure, encrypted system using basic tools like Flask and Mongo. 
